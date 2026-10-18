@@ -1,53 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bebelog KVKK Aydınlatma Metni</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #222; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1.25rem; }
+    .updated { color: #666; margin-top: 0; }
+    ul { padding-left: 1.25rem; }
+  </style>
 </head>
 <body>
   <h1>Bebelog KVKK Aydınlatma Metni</h1>
-  <p>Last updated: March 30, 2026</p>
+  <p class="updated">Son güncelleme: 18 Ekim 2026</p>
 
-  <p>### Toplanan Veriler
+  <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında, Bebelog mobil uygulamasında işlenen kişisel verileriniz hakkında sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
-- Ad, e-posta  
-- Çocuk bilgileri (isim, doğum tarihi, cinsiyet)  
-- Uyku, tuvalet, gelişim verileri  
-- Boy, kilo, baş çevresi  
-- Aşı, ilaç, vitamin  
-- Kullanıcı tarafından yüklenen fotoğraflar
+  <h2>Toplanan Veriler</h2>
+  <ul>
+    <li>Ad, e-posta adresi</li>
+    <li>Gizlilik politikası, kullanım koşulları ve KVKK metnine verilen onay kayıtları</li>
+    <li>Çocuk bilgileri (isim, doğum tarihi, cinsiyet)</li>
+    <li>Uyku, beslenme, tuvalet ve gelişim verileri</li>
+    <li>Boy, kilo, baş çevresi ölçümleri</li>
+    <li>Aşı, ilaç ve vitamin kayıtları</li>
+    <li>Günlük, kilometre taşı ve not kayıtları</li>
+    <li>Kullanıcı tarafından yüklenen fotoğraflar</li>
+    <li>Bildirim (push) token’ı ve bildirim tercihleri</li>
+    <li>Abonelik durumu ve satın alma geçmişi (kart bilgileri tarafımıza ulaşmaz)</li>
+  </ul>
 
----
+  <h2>Veri İşleme Amaçları</h2>
+  <ul>
+    <li>Bebek gelişim takibi hizmetini sunmak</li>
+    <li>Fotoğrafları saklamak ve göstermek</li>
+    <li>Etkinleştirdiğiniz hatırlatma ve bildirimleri göndermek</li>
+    <li>Premium abonelik ve erişimi yönetmek</li>
+    <li>Destek taleplerinize yanıt vermek</li>
+  </ul>
 
-### Veri İşleme Amaçları
+  <h2>Hukuki Sebepler</h2>
+  <p>Kişisel verileriniz; hizmet sözleşmesinin kurulması ve ifası, hukuki yükümlülüklerin yerine getirilmesi ve sağlık verisi niteliğindeki bilgiler ile yurt dışına aktarım bakımından açık rızanız hukuki sebeplerine dayanılarak işlenir.</p>
 
-- Gelişim takibi sağlamak  
-- Fotoğrafları saklamak ve göstermek  
-- Kullanıcı deneyimini iyileştirmek  
+  <h2>Veri Saklama ve Güvenlik</h2>
+  <ul>
+    <li>Veriler Supabase altyapısında saklanır</li>
+    <li>Fotoğraflar özel (private) depolama alanında tutulur ve yalnızca hesap sahibi erişebilir</li>
+    <li>Veri aktarımı şifrelidir (HTTPS)</li>
+  </ul>
 
----
+  <h2>Veri Aktarımı</h2>
+  <p>Verileriniz satılmaz ve reklam amacıyla kullanılmaz. Hizmetin sunulabilmesi için yalnızca aşağıdaki hizmet sağlayıcılara, gerekli olduğu ölçüde aktarılır:</p>
+  <ul>
+    <li><strong>Supabase</strong>: veritabanı, kimlik doğrulama ve fotoğraf depolama</li>
+    <li><strong>RevenueCat</strong>: abonelik yönetimi (kullanıcı kimliği ve satın alma geçmişi)</li>
+    <li><strong>Expo ve Apple Push Notification servisi</strong>: bildirimlerin iletilmesi (push token ve bildirim içeriği)</li>
+    <li><strong>Apple App Store</strong>: abonelik ödemelerinin işlenmesi</li>
+  </ul>
+  <p>Bu hizmet sağlayıcıların sunucuları yurt dışında bulunabilir. Bu nedenle verileriniz, açık rızanıza dayanılarak yurt dışına aktarılabilir. Kanunen zorunlu hallerde yetkili kurumlarla paylaşılabilir.</p>
 
-### Veri Saklama
+  <h2>Saklama Süresi ve Hesap Silme</h2>
+  <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Uygulamada <strong>Ayarlar → Hesabı Sil</strong> adımıyla hesabınızı dilediğiniz zaman silebilirsiniz; bu işlem hesabınızı, tüm takip verilerinizi ve yüklediğiniz tüm fotoğrafları kalıcı olarak siler. Hesap silme, App Store aboneliğinizi iptal etmez; aboneliği Apple ID ayarlarınızdan iptal etmeniz gerekir.</p>
 
-- Veriler Supabase üzerinde saklanır  
-- Fotoğraflar güvenli storage alanında tutulur  
-- Sadece kullanıcı erişebilir  
-
----
-
-### Veri Paylaşımı
-
-- Üçüncü taraflarla paylaşılmaz  
-- Reklam amaçlı kullanılmaz  
-
----
-
-### Kullanıcı Hakları
-
-KVKK kapsamında:
-- Veri silme  
-- Düzeltme  
-- Erişim  
-
-Email: support.bebelog@gmail.com </p>
+  <h2>Kullanıcı Hakları (KVKK Madde 11)</h2>
+  <p>KVKK kapsamında; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını öğrenme, aktarıldığı tarafları bilme, düzeltilmesini veya silinmesini isteme, itiraz etme ve zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+  <p>Başvurularınız için: <a href="mailto:support.bebelog@gmail.com">support.bebelog@gmail.com</a></p>
 </body>
 </html>
